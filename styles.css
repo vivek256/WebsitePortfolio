@@ -1,0 +1,971 @@
+html {
+  font-size: 16px;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  margin-bottom: 60px;
+  height: 60px;
+  /* display: flex;
+   flex-direction: row; */
+  text-align: center;
+  /* margin-bottom: 50px; */
+}
+
+#work {
+  margin-right: 90px;
+}
+
+.navbar > a {
+  display: block;
+  float: right;
+  margin-left: 0px;
+  margin-top: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+.navbar a.active {
+  color: #04aa6d;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex > img {
+  border-radius: 50%;
+  border: 2px solid black;
+  width: 18.75rem;
+  height: 18.75rem;
+}
+
+.flex > img:hover {
+  cursor: pointer;
+}
+
+.flex > div > h1,
+.flex > div > p {
+  margin: 0;
+}
+
+.flex > div > p {
+  font-size: large;
+}
+
+.flex button {
+  margin-top: 1.25rem;
+  padding: 0.625rem 2.5rem;
+  border-radius: 4rem;
+  font-weight: bold;
+  border-width: 0;
+  background-color: rgb(253, 201, 100);
+}
+
+/* .carousel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 10%;
+    box-sizing: border-box;
+    position: relative;
+}
+.carousel-slide img{
+    border: 2px solid black;
+    width: 18.75rem;
+    height: 18.75rem;
+}
+
+/* .carousel-slide img {
+    width: 100%;
+    height: auto;
+} */
+
+/* .project-description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+} */
+
+/* button {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+} */
+
+/* button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+} */
+*/ .flex button:hover {
+  cursor: pointer;
+}
+
+.about {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.services {
+  text-align: center;
+}
+
+.about .about-flex,
+.services .about-flex {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about p,
+.services p,
+.latest-work p {
+  margin: 0 200px 50px 200px;
+  color: rgb(91, 91, 91);
+}
+
+.about .works {
+  margin: 10px 10px;
+
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-weight: bold;
+  border-width: 0;
+  background-color: rgb(253, 201, 100);
+}
+
+.cv {
+  background-color: inherit;
+  margin: 10px 10px;
+
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: 1px solid rgb(253, 201, 100);
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Hide the slides outside the viewport */
+}
+
+.slider {
+  display: flex;
+  margin-top: 70px;
+
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%; /* Each slide takes 100% of the container width */
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.slide h3,.slide p{
+    font-size: 14px;
+}
+
+.slide img {
+  width: 300px; /* Make sure the images are responsive */
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+ 
+
+  position: absolute;
+  top: 50%;
+  color: #333; /* Set the arrow color */
+  font-size: 30px; /* Large size for the arrows */
+  background: none; /* No background */
+  border: none; /* No border */
+  cursor: pointer;
+  z-index: 100;
+  transform: translateY(-50%);
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.prev:hover,
+.next:hover {
+  transform: translateY(-50%) scale(2); /* Slightly enlarge the arrow on hover */
+}
+
+.prev:focus,
+.next:focus {
+  outline: none; /* Remove focus outline */
+}
+
+.prev {
+  left: 50px;
+  top: 170px;
+}
+
+.next {
+  right: 50px;
+  top: 170px;
+}
+
+/* .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+.about-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.about button:hover {
+  cursor: pointer;
+}
+
+.about-flex h2 {
+  margin-bottom: 0;
+  height: 32px;
+}
+.underline {
+  height: 3px;
+  width: 70px;
+  background-color: rgb(253, 201, 100);
+}
+
+.services,
+.latest-work {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services .about-flex,
+.latest-work .about-flex,
+.projects .about-flex {
+  display: inline-block;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.services h2,
+.latest-work h2 {
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+.grid {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid > div {
+  width: 300px;
+  height: 200px;
+
+  border-radius: 8px;
+}
+
+.one,
+.two,
+.three,
+.four {
+  background-color: rgb(126, 185, 255);
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.one > div,
+.two > div,
+.three > div,
+.four > div {
+  font-size: smaller;
+}
+
+.one > div,
+.one > h4,
+.two > div,
+.two > h4,
+.three > div,
+.three > h4,
+.four > div,
+.four > h4 {
+  margin-bottom: 0;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.one > h4,
+.two > h4,
+.three > h4,
+.four > h4 {
+  margin-top: 60px;
+}
+
+.two {
+  background-color: rgb(240, 221, 116);
+}
+.three {
+  background-color: rgb(228, 128, 255);
+}
+.four {
+  background-color: rgb(138, 249, 139);
+}
+
+.work-exp {
+  display: flex;
+  margin: 50px auto 0 auto;
+}
+
+.work-exp > div {
+  width: 300px;
+  height: 180px;
+  background-color: inherit;
+  margin: 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.work-exp > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: smaller;
+}
+
+.work-exp > div > h5,
+.work-exp > div > h3,
+.work-exp > div > p {
+  margin: 0 20px 5px 20px;
+}
+
+.work-exp > div > p {
+  font-size: x-small;
+}
+
+.text {
+  margin: 0 20px 0 20px;
+  font-size: x-small;
+}
+
+.third {
+  background-color: rgb(253, 209, 122) !important;
+}
+
+.hire-me {
+  background-color: rgb(253, 201, 100);
+  width: 100%;
+  height: 170px;
+  margin: 100px 0 100px 0;
+  text-align: center;
+}
+
+.hire-me > h3 {
+  font-weight: 600;
+}
+
+.hire-me > a>button {
+  margin-top: 5px;
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-weight: bold;
+  border-width: 0;
+
+}
+
+.hire-me >a> button:hover {
+  cursor: pointer;
+}
+.bottom {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.bottom > a {
+  text-decoration: none;
+  margin: 0 25px 0px 25px;
+}
+
+.footer {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.footer > div {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .work-exp {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar > a {
+    margin-top: 10px;
+    padding: 3px;
+    font-size: x-small;
+  }
+
+  #work {
+    margin-right: 30px;
+  }
+  .work-exp {
+    flex-direction: column;
+  }
+
+  .flex > img {
+    width: 14.75rem;
+    height: 14.75rem;
+  }
+
+  .flex > div > h1 {
+    font-size: 20px;
+  }
+
+  .flex > div > p {
+    font-size: 13px;
+  }
+
+  .flex button {
+    margin-top: 0.5rem;
+    padding: 7px 18px;
+    border-radius: 4rem;
+    font-size: x-small;
+  }
+
+  .about {
+    margin-top: 100px;
+  }
+
+  .underline {
+    height: 2px;
+    width: 55px;
+    background-color: rgb(253, 201, 100);
+  }
+
+  .about > .about-flex > h2 {
+    font-size: large;
+    min-height: 23px;
+  }
+
+  .about .about-flex,
+  .services .about-flex {
+    margin-bottom: 10px;
+  }
+
+  .about p,
+  .services p,
+  .latest-work p {
+    margin: 0 80px 10px 80px;
+    font-size: 13px;
+  }
+.services .grid .skill{
+    font-size: 9px;
+}
+
+.services .grid h4{
+    margin-top: 10px;
+}
+
+  .about .works {
+    margin-top: 0.5rem;
+    padding: 7px 18px;
+    border-radius: 4rem;
+    font-size: x-small;
+  }
+
+  .cv {
+    margin-top: 0.5rem;
+    padding: 7px 18px;
+    border-radius: 4rem;
+    font-size: x-small;
+  }
+
+  .services h2,
+  .latest-work h2 {
+    margin-top: 100px;
+    font-size: 20px;
+  }
+
+  .grid {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .grid > div {
+    width: 210px;
+    height: 135px;
+
+    border-radius: 8px;
+  }
+
+  .one > div,
+  .two > div,
+  .three > div,
+  .four > div {
+    font-size: smaller;
+  }
+
+  .one > div,
+  .one > h4,
+  .two > div,
+  .two > h4,
+  .three > div,
+  .three > h4,
+  .four > div,
+  .four > h4 {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 10px;
+    margin-top: 0;
+  }
+
+  .one > h4,
+  .two > h4,
+  .three > h4,
+  .four > h4 {
+    margin-top: 60px;
+  }
+
+  .two {
+    background-color: rgb(240, 221, 116);
+  }
+  .three {
+    background-color: rgb(228, 128, 255);
+  }
+  .four {
+    background-color: rgb(138, 249, 139);
+  }
+
+  .work-exp {
+    margin: 20px auto 0 auto;
+  }
+
+  .work-exp > div {
+    width: 210px;
+    height: 140px;
+
+    margin: 10px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .work-exp > div > h5,
+  .work-exp > div > h3,
+  .work-exp > div > p {
+    margin: 0 20px 0px 20px;
+  }
+
+  .work-exp > div > h3 {
+    font-size: small;
+  }
+  .work-exp > div > p {
+    font-size: x-small;
+  }
+
+  .text {
+    margin: 0 20px 0 20px;
+    font-size: 10px;
+  }
+
+  .third {
+    background-color: rgb(253, 209, 122) !important;
+  }
+
+  .hire-me {
+    height: 140px;
+  }
+
+  .hire-me button {
+    margin-top: 0.5rem;
+    padding: 7px 18px;
+    border-radius: 4rem;
+    font-size: x-small;
+  }
+
+  .hire-me > h3 {
+    font-size: smaller;
+  }
+
+  .bottom a {
+    margin: 0px 5px 0 5px;
+    padding: 0px;
+    font-size: x-small;
+  }
+
+  .footer {
+    font-size: x-small;
+  }
+
+  .slider-container {
+    max-width: 100%; /* Make the slider take up the full width */
+  }
+
+  .slide img {
+    width: 250px;  /* Resize images for smaller screens */
+  }
+
+  .about-flex > h2{
+    font-size: 20px;
+  }
+
+  .prev,
+  .next {
+    font-size: 24px;  /* Make arrows slightly smaller */
+    
+  }
+
+  .prev{
+    left: 90px;  /* Adjust position */
+    
+  }
+
+  .next{
+    right:90px;
+  }
+}
+
+@media (max-width: 532px){
+
+
+    .slider-container {
+        max-width: 100%; /* Make the slider take up the full width */
+      }
+    
+      .slide img {
+        width: 200px;  /* Resize images for mobile screens */
+      }
+    
+      .prev,
+      .next {
+        font-size: 20px;  /* Make arrows smaller */
+        top:140px;
+
+      }
+
+      .prev{
+        left:90px
+
+      }
+
+
+
+
+    
+
+}
+
+@media (max-width:470px){
+
+    .services .grid .skill{
+        font-size: 7.5px;
+    }
+    
+    .services .grid h4{
+        margin-top: 5px;
+    }
+
+    .slide h3 ,.slide p{
+        font-size: 12px;
+      }
+
+    .about-flex > h2{
+        font-size: 15px;
+      }
+    .slider-container {
+        max-width: 100%; /* Make the slider take up the full width */
+      }
+    
+      .slide img {
+        width: 150px;  /* Resize images for very small screens */
+      }
+    
+      .prev,
+      .next {
+        font-size: 18px;  /* Make arrows smaller */
+        top:120px;
+       
+      }
+    
+      .prev{
+        left: 15px;  /* Adjust position */
+        
+      }
+    
+      .next{
+        right: 15px;  /* Adjust position */
+      }
+}
+
+@media (max-width: 430px) {
+  .grid {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .grid > div {
+    width: 160px;
+    height: 100px;
+
+    border-radius: 8px;
+  }
+
+  .one > h4,
+  .two > h4,
+  .three > h4,
+  .four > h4 {
+    margin-top: 20px;
+  }
+
+  .one > div,
+  .one > h4,
+  .two > div,
+  .two > h4,
+  .three > div,
+  .three > h4,
+  .four > div,
+  .four > h4 {
+    font-size: 9px;
+  }
+
+  .work-exp > div {
+    width: 180px;
+    height: 125px;
+
+    margin: 10px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .work-exp > div > h3 {
+    font-size: 12px;
+  }
+  .work-exp > div > p {
+    font-size: xx-small;
+  }
+
+  .text {
+    margin: 0 20px 0 20px;
+    font-size: 8px;
+  }
+
+}
+
+@media (max-width: 280px) {
+
+    .services .grid .skill{
+        font-size: 9px;
+    }
+    
+    .services .grid .one,.services .grid .two,.services .grid .three,.services .grid .four{
+        height: 180px;
+    }
+
+    .slide  h3, .slide p{
+        font-size: 11px;
+      }
+
+    .about-flex > h2{
+        font-size: 12px;
+      }
+  .navbar > a {
+    font-size: 10px;
+  }
+
+  #work {
+    margin-right: 25px;
+  }
+
+  .flex > img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .flex > div > h1 {
+    font-size: 15px;
+  }
+
+  .flex > div > p {
+    font-size: 10px;
+  }
+
+  .flex button {
+    margin-top: 0.3rem;
+    padding: 4px 15px;
+    border-radius: 4rem;
+    font-size: xx-small;
+  }
+
+  .about {
+    margin-top: 50px;
+  }
+
+  .underline {
+    height: 1.5px;
+    width: 55px;
+    background-color: rgb(253, 201, 100);
+  }
+
+  .about > .about-flex > h2 {
+    font-size: 12px;
+    max-height: 23px;
+  }
+
+  .about .about-flex,
+  .services .about-flex {
+    margin-bottom: 5px;
+  }
+
+  .about p,
+  .services p,
+  .latest-work p {
+    margin: 0 40px 10px 40px;
+    font-size: 10px;
+  }
+
+  .about .works {
+    margin-top: 0.3rem;
+    padding: 4px 15px;
+    border-radius: 4rem;
+    font-size: xx-small;
+  }
+
+  .cv {
+    margin-top: 0.3rem;
+    padding: 5px 15px;
+    border-radius: 4rem;
+    font-size: xx-small;
+  }
+
+  .services h2,
+  .latest-work h2 {
+    margin-top: 50px;
+    font-size: 12px;
+    max-height: 20px;
+  }
+
+  .grid {
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3px;
+  }
+
+  .grid > div {
+    width: 120px;
+    height: 80px;
+
+    border-radius: 8px;
+  }
+
+  .one > div,
+  .one > h4,
+  .two > div,
+  .two > h4,
+  .three > div,
+  .three > h4,
+  .four > div,
+  .four > h4 {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 8px;
+    margin-top: 0;
+  }
+
+  .one > h4,
+  .two > h4,
+  .three > h4,
+  .four > h4 {
+    margin-top: 8px;
+  }
+
+  .two {
+    background-color: rgb(240, 221, 116);
+  }
+  .three {
+    background-color: rgb(228, 128, 255);
+  }
+  .four {
+    background-color: rgb(138, 249, 139);
+  }
+
+  .work-exp > div > h3 {
+    font-size: x-small;
+  }
+  .work-exp > div > p {
+    font-size: xx-small;
+  }
+
+  .text {
+    margin: 0 20px 0 20px;
+    font-size: 8px;
+  }
+
+  .hire-me button {
+    margin-top: 0.3rem;
+    padding: 4px 15px;
+    border-radius: 4rem;
+    font-size: xx-small;
+  }
+
+  .footer > div {
+    font-size: xx-small;
+  }
+
+  
+}

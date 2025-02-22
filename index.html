@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <a href="#project">Projects</a>
+      <a href="#service">Skills</a>
+      <a href="#about-me">About Me</a>
+      <a href="#home">Home</a>
+    </div>
+
+    <div id="home" class="flex">
+      <div>
+        <h1>I'm Vivek</h1>
+        <p>Full stack Developer</p>
+        <p></p>
+        <a href="mailto:vivek2561@gmail.com" style="text-decoration: none;cursor: pointer;" class="hire-me-button"><button style="cursor: pointer;">HIRE ME</button></a>
+      </div>
+      <img src="./profile-img.jpeg" alt="vivek's image" />
+    </div>
+
+    <div id="about-me" class="about">
+      <div class="about-flex">
+        <h2>About Me</h2>
+        <div class="underline"></div>
+      </div>
+
+      <p>
+        Worked as a Developer with 1 year of experience in commercial
+        application web development. Built innovative and cutting-edge business
+        solutions for the impressive suite of clients within its global reach.
+      </p>
+
+      
+      <a  href="#project" style="text-decoration: none;">
+        <button class="works">VIEW PROJECTS</button>
+    </a>
+      <a href="https://drive.google.com/uc?export=download&id=1RL_JhFFjeemHcaNn1baaAgutecpkR_6X" >
+        <button class="cv">DOWNLOAD CV</button>
+    </a>
+    </div>
+
+    <div id="service" class="services">
+      <div class="about-flex">
+        <h2>Skills</h2>
+        <div class="underline"></div>
+      </div>
+
+      <p>
+        These are some of my skills which I have learnt through professional as
+        well as personal work experience.
+      </p>
+
+      <div class="grid">
+        <div class="one">
+          <h4>Frontend</h4>
+          <div class="skill">
+            Javascript, CSS, HTML5 ,React, Redux, Bootstrap, jQuery
+          </div>
+        </div>
+        <div class="two">
+          <h4>Programming</h4>
+          <div class="skill">Javascript, Python, Java</div>
+        </div>
+        <div class="three">
+          <h4>Other skills</h4>
+          <div class="skill">AI & Chat GPT</div>
+        </div>
+        <div class="four">
+          <h4>Backend</h4>
+          <div class="skill">
+            Javascript, Express JS, Mongoose, Authorization, REST API , NodeJS,
+            MERN Stack ,MongoDB, Authentication, Git, CI/CD Pipleline , SQL,
+            NOSQL
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="latest-work">
+      <div class="about-flex">
+        <h2>Latest Works</h2>
+        <div class="underline"></div>
+      </div>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum
+        consequat nunc, quis ullamcorper tellus volutpat vitae. Sed tempus odio
+        bibendum, rhoncus lectus sit amet, viverra velit.
+      </p>
+    </div> -->
+
+    <div id="project" class="projects">
+      <div class="about-flex">
+        <h2>Projects</h2>
+        <div class="underline"></div>
+      </div>
+
+      <div class="slider-container">
+        <div class="slider" id="projectSlider">
+          <div class="slide">
+            <img src="img6.jpg" alt="Project 1" />
+            <h3>Realtime Chat App</h3>
+            <p><b>Technologies</b> - Node.js , Socket.io , Mongoose ,MongoDB</p>
+            <p>
+              <b>Features</b> - User authentication , Real-time messaging with
+              websockets, Private Messaging , Save message history in database.
+            </p>
+          </div>
+          <div class="slide">
+            <img src="img4.jpg" alt="Project 2" />
+            <h3>Event Ticketing System</h3>
+            <p><b>Technologies</b> - Node.js , MySQL , RazorPay API</p>
+            <p>
+              <b>Features</b> - Users can search for events,purchase & book
+              tickets, and receive confirmation.User authentication and
+              authorization. Allow event hosts to track ticket sales and
+              capacity
+            </p>
+          </div>
+          <div class="slide">
+            <img src="img5.jpg" alt="Project 3" />
+            <h3>Tast Management API</h3>
+            <p>
+              <b>Technologies</b> - Node.js, Express.js, MongoDB, JWT
+              Authentication
+            </p>
+            <p>
+              <b>Features</b> - User authentication , CRUD Operations, Task
+              Prioritization & Categories, Due Date.
+            </p>
+          </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </div>
+
+    <div class="latest-work">
+      <div class="about-flex">
+        <h2>Work Experience</h2>
+        <div class="underline"></div>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum
+        consequat nunc, quis ullamcorper tellus volutpat vitae. Sed tempus odio
+        bibendum, rhoncus lectus sit amet, viverra velit.
+      </p>
+
+      <div class="work-exp">
+        <div class="first">
+          <br />
+          <p>January 2021-Aug 2021</p>
+          <h3>Frontend Developer ( Intern )</h3>
+          <p>Biztime IT solutions</p>
+          <div class="text">
+            Developing Query Resolution System to ensure quality engineering
+            services in rural area. This group project for final semester was
+            made using MEAN -stack. Achieved service time and quality targets.
+          </div>
+        </div>
+        <div class="second">
+          <br />
+          <p>Oct 2021-Dec 2021</p>
+          <h3>Web Developer</h3>
+          <p>Conjoinix Total Solutions</p>
+          <div class="text">
+            I worked on the front end of a vehicle locator with GPS. Creating
+            API methods & developing Frontend.
+          </div>
+        </div>
+        <div class="third">
+          <br />
+          <p>Dec 2021-Oct 2022</p>
+          <h3>Computer Scientist</h3>
+          <p>Belzabar Software Design</p>
+          <div class="text">
+            I worked in a team in a vehicle management system. A project dealing
+            with management of vehicles based in the USA . Work with the scrum
+            teams, systems team, and development managers to refine a strategy
+            for releasing components and reducing dependencies
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hire-me">
+      <br />
+      <h3>Have any projects in mind?</h3>
+      <a href="mailto:vivek2561@gmail.com" style="text-decoration: none;cursor: pointer;" class="hire-me-button"><button>HIRE ME</button></a>
+    </div>
+
+    <div class="bottom">
+      <a href="#home">Home</a>
+      <a href="#about-me">About Me</a>
+      <a href="#service">Skills</a>
+      <a href="#project">Projects</a>
+    </div>
+
+    <div class="footer">
+      <div style="text-align: left; margin-left: 20px">Designed with love</div>
+      <div style="text-align: right; margin-right: 20px">
+        @ 2025 Copyright by Vivek
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
